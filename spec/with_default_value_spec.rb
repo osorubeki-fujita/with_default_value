@@ -9,7 +9,7 @@ describe WithDefaultValue do
     expect( ::WithDefaultValue::VERSION ).to eq( version )
     expect( ::Deplo.version_check( ::WithDefaultValue::VERSION , spec_filename ) ).to eq( true )
   end
-  
+
   describe BasicObjectExt do
     describe "\#with_default_value" do
       it "checkes instance by \'blank?\' (defined by ActiveSupport, not \'nil?\'). If the instance is evaluated as blank, returns default value." do
